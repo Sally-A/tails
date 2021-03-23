@@ -2,10 +2,10 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderDirectoryItem({campsite}) {
+function RenderGalleryItem({campsite}) {
     return (
         <Card>
-            <Link to={`/directory/${campsite.id}`}>
+            <Link to={`/Gallery/${campsite.id}`}>
                 <CardImg width="100%" src={campsite.image} alt={campsite.name} />
                 <CardImgOverlay>
                     <CardTitle>{campsite.name}</CardTitle>
@@ -15,12 +15,12 @@ function RenderDirectoryItem({campsite}) {
     );
 }
 
-function Directory(props) {
+function Gallery(props) {
 
-    const directory = props.campsites.map(campsite => {
+    const Gallery = props.campsites.map(campsite => {
         return (
             <div key={campsite.id} className="col-md-5 m-1">
-                <RenderDirectoryItem campsite={campsite} />
+                <RenderGalleryItem campsite={campsite} />
             </div>
         );
     });
@@ -31,18 +31,18 @@ function Directory(props) {
                 <div className="col">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>Directory</BreadcrumbItem>
+                        <BreadcrumbItem active>Gallery</BreadcrumbItem>
                     </Breadcrumb>
-                    <h2>Directory</h2>
+                    <h2>Gallery</h2>
                     <hr />
                 </div>
             </div>
             <div className="row">
-                {directory}
+                {Gallery}
             </div>
         </div>
     );
 
 }
 
-export default Directory;
+export default Gallery;
