@@ -1,124 +1,490 @@
-body {
-  font-family: "Open Sans", sans-serif;
+/*General Styling*/
+.App {
+  text-align: center;
+  font-size: 18px;
 }
 
-h1, h2, h3, .card-body>.card-title {
-  font-family: "Lobster", cursive;
-}
-
-.card-title {
-  font-weight: 500;
-  font-size: 1.25rem;
-}
-
-h2 {
-  color: #068650;
-}
-
-.card-img-overlay .card-title {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px;
-}
-
-.site-footer {
-  background-image: linear-gradient(#91eba4, white);
-  padding: 20px 0;
-}
-
-.jumbotron {
+li {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(to right, #0d6a79, #77e0f1, #3ecca4);
-  color: white;
 }
 
-.jumbotron h2 {
-  color: white;
+ul {
+  padding: 0;
 }
 
-.navbar-dark {
-  background-color: #068650;
+/*Header*/
+
+main {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: white;
 }
 
-.ourAddress{
-  border: 20px solid #0d6a79; 
-  outline: 0.5rem solid khaki;
-  padding: 20px;
+.logo {
+  width: 200px;
+  height: 225px;
+  float: left;
+  clear: right;
 }
 
-.ourFeedBack{
-  border: 20px solid #0d6a79; 
-  outline: 0.5rem solid khaki;
-  padding: 20px;
+header {
+  width: 100%;
+  background-color: #7993A0;
+  box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
 }
 
-
-header h2 {
-  color: white; }
-
-
-.navbar {
-  background-color: #068650; }
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.carousel {
-  border: 20px solid #0d6a79; 
-  outline: 0.5rem solid khaki;
-  padding: 2px;
-}
-
-
-#carouselButton {
+.subMenu {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 100; }
+  right: 1px;
+  background-color: #36454d;
+  min-width: 250px;
+  z-index: 1;
+}
 
-#reserveModal .modal-header {
-  background-color: #17A2B8;
-  color: white; }
+.hidden {
+  display: none;
+}
 
-#loginModal .modal-header {
-  background-color: #17A2B8;
-  color: white; }
+/*Navigation*/
 
-a, a:hover {
-  color: inherit;
-  text-decoration: none; }
+.nav {
+  position: fixed;
+  top: 0;
+  margin-top: auto;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3a515c;
+  z-index: 1;
+}
 
-.serviceTypes {
+.nav > h4 {
+  position: absolute;
+  left: 0;
   margin: 0;
-  border: 20px solid #0d6a79; 
-  outline: 0.5rem solid khaki;
-  padding: 2px;
 }
 
-#services{
-  border: 5px solid #0d6a79; 
-  margin-bottom: 4rem;
+nav > a {
+  padding: 0 5px;
+  text-decoration: none;
 }
 
-#prices{
-  border: 5px solid #0d6a79; 
-  margin-bottom: 4rem;
+.subMenu > a, .services > ul > li, .menu, .subMenuMobile > a, nav > svg, .nav > h4 > a {
+  margin: 0 5px;
+  padding: 0 5px;
+  text-decoration: none;
 }
 
-.tailsOwner{
-  border: 20px solid #0d6a79; 
-  outline: 0.5rem solid khaki;
-  padding: 20px;
-  margin-bottom: 4rem;
+nav > a:link, .subMenu > a:link, .subMenuMobile > a:link, .homepageAbout > div > a:link,  .nav > h4 > a:link {
+  color: white;
 }
-.dogPic{
-  border: 20px solid #0d6a79; 
-  outline: 0.5rem solid khaki;
-  padding: 2px;
+
+nav > a:visited, .subMenu > a:visited, .subMenuMobile > a:visited, .homepageAbout > div > a:visited,  .nav > h4 > a:visited {
+  color: white;
+}
+
+nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > a:hover {
+  color: #f5d000;
+}
+
+/*Homepage Content Styling*/
+.missionStatement {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 75px;
+  padding-top: 40px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.missionStatement > div {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.missionStatement > div > p {
+  text-align: left;
+}
+
+.missionStatement > div > p > span {
+  font-style: italic;
+}
+
+.dogGrooming, .petService {
+  width: 440px;
+  height: 350px;
+  display: inline-block;
+  margin: 0 50px;
+  position: relative;
+}
+
+.serviceLinks > h1 {
+  text-align: center;
+}
+
+.serviceLinks > div > a {
+  width: 440px;
+  height: 350px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.serviceLinks > div > a:visited {
+  color: black;
+}
+
+.serviceLinks > div > a:hover {
+  color: black;
+}
+
+.dogGrooming {
+  background: url('assests/images/puppy1.jpg') no-repeat;
+  background-size: contain;
+}
+
+.petService {
+  background: url('assests/images/animals.jpg') no-repeat;
+  background-size: contain;
+}
+
+.homepageAbout {
+  width: 100%;
+  overflow: auto;
+  background-color: #7993A0;
+  padding-bottom: 50px;
+}
+
+.homepageAbout > div {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepageAbout > div > p {
+  text-align: left;
+  margin-top: 0;
+  line-height: 1.75em;
+}
+
+.homepageAbout > div > h1 {
+  margin-top: 0;
+}
+
+.owner2Pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  width: 50%;
+  clear: left;
+  float: right;
+}
+
+
+/*General Styling for About, Services Headers*/
+.about {
+  margin-top: 75px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.about, .services {
+  text-align: left;
+}
+
+.about > h1, .services > h1, .services > h3, .services > h2 {
+  text-align: center;
+}
+
+.ownerPic {
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  width: 45%;
+}
+
+.aboutContent {
+  /* width: %; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Contact Page Styling*/
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.info > div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact > .info > div > p {
+  text-align: left;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactForm > textarea {
+  width: 66%;
+}
+
+.contactForm > label {
+  width: 35%;
+  display: block;
+  float: left;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.contactForm > label > input {
+  width: 200px;
+  padding: 6px;
+}
+
+textarea {
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.contactForm > button {
+  margin-bottom: 25px;
+  width: 150px;
+}
+
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 1440px ) {
+  
+  .nav {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1302px) {
+  .owner2Pic {
+    float: none;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .missionStatement > div {
+    width: 75%;
+  }
+
+  .aboutContent {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  nav > a, .menu {
+    font-size: 18px;
+  }
+
+  nav > a, .menu {
+    padding: 0 2px;
+  }
+
+  nav > svg {
+    margin: 0 2px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .ownerPic {
+    width: 60%;
+  }
+
+  .aboutContent {
+    width: 70%;
+  }
+
+  .petService, .dogGrooming {
+    margin: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  main {
+    margin-left: 0;
+  }
+
+  .contactForm, .info {
+    width: 66%;
+  }
+  .contactForm > textarea {
+    width: 90%;
+  }
+
+  .homepageAbout > div  {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  main {
+    width: 100%;
+  }
+
+  .ownerPic {
+    width: 60%;
+  }
+}
+ 
+@media only screen and (max-width: 640px) {
+  header {
+    box-shadow: none;
+  }
+
+  header > img {
+    position: absolute;
+    top: 0;
+    float: left;
+    left: 0;
+  }
+
+  .logo {
+    margin-top: 0;
+    width: 175px;
+    height: 200px;
+  }
+
+  main {
+    margin-top: 50px;
+  }
+
+  .missionStatement {
+    width: 90%;
+  }
+
+  .about > img {
+    width: 90%;
+  }
+
+  .aboutContent {
+    width: 90%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info > div {
+    width: 100%;
+  }
+
+}
+
+/*Mobile Styling*/
+@media only screen and (max-width: 530px) {
+  .dogGrooming, .petService, .serviceLinks > div > a {
+    width: 260px;
+    height: 190px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .missionStatement > div > img {
+    float: none;
+  }
+
+  .contact > div, .contactForm {
+    width: 90%;
+  }
+
+  main {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  header {
+    max-height: 231px;
+    min-height: 231px;
+  }
+
+  header > img {
+    float: none;
+    position: relative;
+    padding-top: 25px;
+  }
+
+  nav > a {
+    margin: 10px 0;
+  }
+
+  .owner2Pic {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .aboutContent {
+    width: 90%;
+  }
+
+  .ownerPic {
+    float: none;
+  }
+  main {
+    width: 100%;
+  }
+
+  .missionStatement > p {
+    width: 100%;
+  }
+
+  .dogGrooming, .petService {
+    margin: 0;
+  }
 }
