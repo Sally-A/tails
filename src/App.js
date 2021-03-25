@@ -11,52 +11,6 @@ import './App.css';
 
 class App extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      isTablet: false,
-      isMobile: false,
-      photos: [],
-      user: [],
-      isLoggedIn: false
-    }
-  }
-
-  componentDidMount() {
-    let mobileMediaQuery = window.matchMedia('(max-width: 850px)');
-
-    if (mobileMediaQuery.matches) {
-      this.setState({
-        isTablet: false,
-        isMobile: true
-      })
-    }
-
-    fetch('https://pacific-fortress-97426.herokuapp.com/', {
-      method: 'GET'
-    }).then((res) => {
-      return res.json();
-    }).then((photos) => {
-      this.setState({
-        photos
-      })
-    }).catch((e) => {
-      console.log({ e })
-    })
-  }
-
-  componentWillUnmount() {
-    localStorage.removeItem('user')
-  }
-
-  setUserState = (data) => {
-    localStorage.setItem('user', JSON.stringify(data))
-    this.setState({
-      user: data,
-      isLoggedIn: true
-    })
-  }
-
   render() {
 
     return (

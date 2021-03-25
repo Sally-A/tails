@@ -7,7 +7,7 @@ class Gallery extends Component {
     render() {
         return (
             <section className="dogGallery">
-                <ul className="gallery">
+                <div className="gallery">
                     {ImageData.map((img, index) => {
                         return (
                             <li key={index}>
@@ -15,7 +15,7 @@ class Gallery extends Component {
                             </li>
                         )
                     })}
-                </ul>
+                </div> 
             </section>
         )
     }
