@@ -7,40 +7,30 @@
     text-align: left;
 }
 
-.wrapper {
-    width: 75%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
-}
-
 .reviewSection {
-    width: 100%;
-    text-align: left;
-    font-size: 16px;
+    margin-top: 4em;
+    padding-left: 2em;
+    padding-bottom: 2.5em;
+    padding-top: 2em;
+    background-color: #cbd7da;
+    text-align: left;    
 }
 
-.reviewSection > .wrapper > h1, .homepageReviews > .wrapper > h1 {
+.homepageReviews > .wrapper > h1 {
     text-align: center;
 }
 
-.reviewSection > .wrapper > h1 {
-    background-color: white;
-    font-size: 36px;
-}
-
 .cl_review {
+    font-size: 16px;
     padding: 5px;
-    background-color: white;
 }
 
 .border-line {
     display:block;
     border:none;
-    color:white;
+    /* color:white; */
     height:1px;
-    background:black;
+    /* background:black; */
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
 }
 
@@ -48,8 +38,3 @@
     transition: ease-in-out 5s;
 }
 
-@media only screen and (max-width: 450px) {
-    .wrapper {
-        width: 80%;
-    }
-}

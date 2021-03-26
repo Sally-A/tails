@@ -7,6 +7,10 @@ class Gallery extends Component {
     render() {
         return (
             <section className="dogGallery">
+                <div className="pagetitle">
+                    <h1>Tail Gallery</h1>
+                </div>
+
                 <div className="gallery">
                     {ImageData.map((img, index) => {
                         return (

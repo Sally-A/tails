@@ -25,7 +25,7 @@ main {
 }
 
 .logo {
-  width: 200px;
+  width: 225px;
   height: 225px;
   float: left;
   clear: right;
@@ -35,16 +35,8 @@ header {
   width: 100%;
   background-color: #7993A0;
   box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
-}
-
-.subMenu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 1px;
-  background-color: #36454d;
-  min-width: 250px;
-  z-index: 1;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .hidden {
@@ -73,29 +65,23 @@ header {
 .nav > h4 {
   position: absolute;
   left: 0;
-  margin: 0;
+  margin: 0 .5em;
 }
 
 nav > a {
-  padding: 0 5px;
+  padding: 0 .4em;
   text-decoration: none;
 }
 
-.subMenu > a, .services > ul > li, .menu, .subMenuMobile > a, nav > svg, .nav > h4 > a {
-  margin: 0 5px;
-  padding: 0 5px;
-  text-decoration: none;
-}
-
-nav > a:link, .subMenu > a:link, .subMenuMobile > a:link, .homepageAbout > div > a:link,  .nav > h4 > a:link {
+nav > a:link, .subMenu > a:link, .homepageAbout > div > a:link,  .nav > h4 > a:link {
   color: white;
 }
 
-nav > a:visited, .subMenu > a:visited, .subMenuMobile > a:visited, .homepageAbout > div > a:visited,  .nav > h4 > a:visited {
+nav > a:visited, .subMenu > a:visited, .homepageAbout > div > a:visited,  .nav > h4 > a:visited {
   color: white;
 }
 
-nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > a:hover {
+nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > a:hover {
   color: #f5d000;
 }
 
@@ -195,8 +181,7 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
 .owner2Pic {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  padding-right: 10px;
+  margin-right: 2em;
   width: 50%;
   clear: left;
   float: right;
@@ -204,19 +189,29 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
 
 
 /*General Styling for About, Services Headers*/
-.about {
-  margin-top: 75px;
-  padding-bottom: 50px;
-  min-height: 100vh;
-  max-height: 100vh;
+
+.pagetitle {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 20px;
 }
 
-.about, .services {
+.about {
+  margin-top: 4em;
+  padding-left: 2em;
+  padding-bottom: 20em;
+  padding-top: 2em;
+  background-color: #cbd7da;
   text-align: left;
 }
 
-.about > h1, .services > h1, .services > h3, .services > h2 {
+.services {
+  text-align: left;
+}
+
+.services > h1, .services > h3, .services > h2 {
   text-align: center;
+  padding-top: 1px;
 }
 
 .ownerPic {
@@ -225,13 +220,14 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
+  padding-right: 20px;
   width: 45%;
 }
 
 .aboutContent {
   /* width: %; */
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 /*Contact Page Styling*/
@@ -244,9 +240,9 @@ nav > a:hover, .subMenu > a:hover, .subMenuMobile > a:hover, .homepageAbout > di
 }
 
 .info > div {
-  width: 50%;
+  /* width: 50%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .contact > .info > div > p {
@@ -291,12 +287,4 @@ textarea {
 }
 
 
-/* Mobile CSS */
-
-@media only screen and (max-width: 1440px ) {
-  
-  .nav {
-    font-size: 24px;
-  }
-}
 

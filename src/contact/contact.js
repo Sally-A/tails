@@ -60,13 +60,13 @@ class Contact extends Component {
         const {cust_email, cust_name, cust_phone, message} = this.state;
         return (
             <section className="contact">
+                <div className="pagetitle">
+                    <h1>Contact Us</h1>
+                </div>
 
                 <div className="info">
-                    <div>
-                        <h1>Contact Us</h1>
-                        <p>Phone: (330) 831-9545</p>
-                        <p>Email: TailsOfTheTownLisbon@gmail.com</p>
-                    </div>
+                    <p>Phone: (330) 831-9545</p>
+                    <p>Email: TailsOfTheTownLisbon@gmail.com</p>
                 </div>
 
                 <form className="contactForm">
