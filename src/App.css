@@ -48,6 +48,12 @@ header {
 
 /*Navigation*/
 
+
+/* no underline on links */
+a{
+  text-decoration: none;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -58,7 +64,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  min-height: 60px;
+  min-height: 70px;
   margin-left: auto;
   margin-right: auto;
   background-color: #3a515c;
@@ -66,14 +72,16 @@ header {
 }
 
 .nav > h4 {
+  text-decoration: none;
   position: absolute;
   left: 0;
-  margin: 0 .5em;
+  margin: 0 2em;
+ 
 }
 
 nav > a {
+  margin-right: 1em;
   padding: 0 .4em;
-  text-decoration: none;
 }
 
 nav > a:link, .subMenu > a:link, .homepageAbout > div > a:link,  .nav > h4 > a:link {

@@ -22,33 +22,22 @@ class Nav extends Component {
 
         return (
             <nav className="nav">
-                <h4><Link to="/">Tails Of The Town</Link></h4>
-                <FontAwesomeIcon icon={faPaw} size="xs" />
+                <h4><Link to="/">Tails Of The Town </Link></h4>
 
-                <Link to="/about">
-                    About
-                </Link>
                 <FontAwesomeIcon icon={faPaw} size="xs" />
+                <Link to="/about">About</Link>
 
-                <Link to="/gallery">
-                    Gallery
-                </Link>
                 <FontAwesomeIcon icon={faPaw} size="xs" />
+                <Link to="/gallery">Gallery</Link>
 
-                <Link to="/contact">
-                    Contact
-                </Link>
                 <FontAwesomeIcon icon={faPaw} size="xs" />
+                <Link to="/contact">Contact</Link>
 
-                <Link to="/reviews">
-                    Reviews
-                </Link>
                 <FontAwesomeIcon icon={faPaw} size="xs" />
+                <Link to="/reviews">Reviews</Link>
 
-                <Link to="/grooming">
-                    Services
-                </Link>
                 <FontAwesomeIcon icon={faPaw} size="xs" />
+                <Link to="/grooming">Services</Link>
 
             </nav>
         )
