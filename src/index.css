@@ -5,10 +5,10 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  /* -moz-osx-font-smoothing: grayscale; */
+  /*box-sizing: border-box;*/
+  /* height: 100%; */
+  /* width: 100%; */
   background-color: white;
   color: white;
   overflow-x: hidden;
@@ -16,13 +16,12 @@ body {
   background-repeat: repeat;
   background-size: 500px 500px;
   
-  /*background-size: cover;*/
-  /* background-size: 275px 500px; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
 }
 
 

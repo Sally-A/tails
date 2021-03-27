@@ -43,7 +43,7 @@ class Contact extends Component {
             message
         }
 
-        emailjs.send('TailsOfTheTownLisbon', 'template_HXUJMT8p',
+        emailjs.send('TailsOfTheTown', 'template_HXUJMT8p',
                          emailToSend, 'user_fspuszkuYu1bFDmfJ5V9B')
                          .then((result) => {
                              if(result.status) {
@@ -66,7 +66,7 @@ class Contact extends Component {
 
                 <div className="info">
                     <p>Phone: (330) 831-9545</p>
-                    <p>Email: TailsOfTheTownLisbon@gmail.com</p>
+                    <p>Email: TailsOfTheTown@gmail.com</p>
                 </div>
 
                 <form className="contactForm">
