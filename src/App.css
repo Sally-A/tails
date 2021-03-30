@@ -1,5 +1,6 @@
 /*General Styling*/
 .App {
+
   text-align: center;
   font-size: 18px;
 }
@@ -35,15 +36,11 @@ main {
 
 header {
   width: 100%;
-  /* background-color: #7993A0; */
   background-color: #cbd7da;
   box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
   margin-left: 1em;
   margin-right: 1em;
-}
 
-.hidden {
-  display: none;
 }
 
 /*Navigation*/
@@ -68,7 +65,6 @@ a{
   margin-left: auto;
   margin-right: auto;
   background-color: #3a515c;
-  z-index: 1;
 }
 
 .nav > h4 {
@@ -84,16 +80,19 @@ nav > a {
   padding: 0 .4em;
 }
 
-nav > a:link, .subMenu > a:link, .homepageAbout > div > a:link,  .nav > h4 > a:link {
+.nav > a:link, .subMenu > a:link, .homepageAbout > div > a:link,  .nav > h4 > a:link {
   color: white;
 }
 
-nav > a:visited, .subMenu > a:visited, .homepageAbout > div > a:visited,  .nav > h4 > a:visited {
+.nav > a:visited, .subMenu > a:visited, .homepageAbout > div > a:visited,  .nav > h4 > a:visited {
   color: white;
 }
 
-nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > a:hover {
+.nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > a:hover {
   color: #f5d000;
+}
+.pawicon {
+  color: #cbd7da;
 }
 
 /*Homepage Content Styling*/
@@ -101,7 +100,7 @@ nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > 
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 5em;
   margin-bottom: 75px;
   padding-top: 40px;
   position: relative;
@@ -202,25 +201,33 @@ nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > 
 
 .pagetitle {
   margin-top: 2em;
+  margin-bottom: 2em;
   text-align: center;
   font-size: 20px;
   background-color: #cbd7da;
+  font-family: "Lobster", cursive;
+ 
 }
 
 .about {
-  margin-top: 4em;
+  margin-top: 5em;
   padding-left: 2em;
-  padding-bottom: 32em;
+  padding-bottom: 35em;
   padding-top: 1em;
   background-color: #cbd7da;
   text-align: left;
 }
 
 .services {
+  margin-top: 5em;
+  padding-bottom: .5em;
+  padding-top: 1em;
   text-align: left;
+  font-family: 'Lobster", cursive';
 }
 
 .services > h1, .services > h3, .services > h2 {
+  font-family: 'Lobster", cursive';
   text-align: center;
   padding-top: 1px;
 }
@@ -237,11 +244,16 @@ nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > 
 
 /*Contact Page Styling*/
 .contact {
+  margin-top: 5em;
+  padding-top: 1em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4em;
-  padding-top: 1em;
   background-color: #cbd7da;
+}
+
+.info {
+  font-size: 18px;
+  line-height: 12px;
 }
 
 .contactForm {
@@ -254,7 +266,7 @@ nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > 
 .contactForm > label {
   float: left;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .contactForm > label > input {
@@ -262,13 +274,13 @@ nav > a:hover, .subMenu > a:hover, .homepageAbout > div > a:hover,  .nav > h4 > 
   justify-content: center;
   align-items: center;
   width: 40em;
-  padding: 6px;
+  padding: .2em;
   justify-content: center;
  }
 
  .contactForm > textarea {
   width: 40em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .contactForm > button {

@@ -70,7 +70,6 @@ class Contact extends Component {
                 </div>
 
                 <form className="contactForm">
-                    <h2>Send us a Message</h2>
                     <label htmlFor="name">Name
                         <input type="text" name="name" required onChange={this.handleName} />
                     </label>

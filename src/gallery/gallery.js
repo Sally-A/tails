@@ -6,7 +6,7 @@ class Gallery extends Component {
     
     render() {
         return (
-            <section className="dogGallery">
+            <section className="tailGallery">
                 <div className="pagetitle">
                     <h1>Tail Gallery</h1>
                 </div>

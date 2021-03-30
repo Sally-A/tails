@@ -12,7 +12,7 @@ class Grooming extends Component {
                 </div>
 
                 <div className="service">
-                    <h2>Services</h2>
+                    <h1>Services</h1>
                 </div>
                 <Container fluid className="container" id="services">
                     <Row className="row">
@@ -52,7 +52,7 @@ class Grooming extends Component {
 
 
                 <div className="price">
-                    <h2>Prices</h2>
+                    <h1>Prices</h1>
                 </div>
 
                 <Container fluid className="container" id="prices">

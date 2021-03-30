@@ -17,7 +17,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
 
-          <Nav />}
+          <Nav/>
 
           <main>
             <Switch>
@@ -26,7 +26,7 @@ class App extends Component {
               <Route path="/gallery" component={Gallery} />
               <Route path="/contact" component={Contact} />
               <Route path="/reviews" component={Reviews} />
-              <Route path="/grooming" render={(props) => <Grooming/>} />
+              <Route path="/grooming" component={Grooming} />
             </Switch>
           </main>
 

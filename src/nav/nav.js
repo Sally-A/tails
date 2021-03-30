@@ -24,19 +24,19 @@ class Nav extends Component {
             <nav className="nav">
                 <h4><Link to="/">Tails Of The Town </Link></h4>
 
-                <FontAwesomeIcon icon={faPaw} size="xs" />
+                <FontAwesomeIcon icon={faPaw} size="xs" className="pawicon" />
                 <Link to="/about">About</Link>
 
-                <FontAwesomeIcon icon={faPaw} size="xs" />
+                <FontAwesomeIcon icon={faPaw} size="xs" className="pawicon" />
                 <Link to="/gallery">Gallery</Link>
 
-                <FontAwesomeIcon icon={faPaw} size="xs" />
+                <FontAwesomeIcon icon={faPaw} size="xs" className="pawicon" />
                 <Link to="/contact">Contact</Link>
 
-                <FontAwesomeIcon icon={faPaw} size="xs" />
+                <FontAwesomeIcon icon={faPaw} size="xs" className="pawicon" />
                 <Link to="/reviews">Reviews</Link>
 
-                <FontAwesomeIcon icon={faPaw} size="xs" />
+                <FontAwesomeIcon icon={faPaw} size="xs"className="pawicon" />
                 <Link to="/grooming">Services</Link>
 
             </nav>
