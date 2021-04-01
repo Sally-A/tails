@@ -74,6 +74,15 @@ a{
   margin: 0 2em;
  
 }
+.logo-sm-tail {
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 12em;
+    clear: right;
+    padding: .5em;
+}
 
 nav > a {
   margin-right: 1em;
