@@ -7,6 +7,21 @@
     text-align: left;
 }
 
+.homepageReviews > h1 {
+    text-align: center;
+}
+.clientsays {
+    text-align: left;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.Carousel{
+    text-align: left;
+    margin-left: 4em;
+    margin-right: 4em;    
+}
+
+
 .reviewSection {
     margin-top: 5em;
     padding-top: 1em;
@@ -17,9 +32,7 @@
     text-align: left;    
 }
 
-.homepageReviews > .wrapper > h1 {
-    text-align: center;
-}
+
 
 .cl_review {
     font-size: 16px;

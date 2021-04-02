@@ -104,7 +104,6 @@ class Contact extends Component {
                         <address>
                             121 C N. Market St.<br />
                             Lisbon, OH 44432<br />
-                            U.S.A.
                         </address>
                     </div>
                     <div className="col">
