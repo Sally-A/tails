@@ -122,11 +122,6 @@ class Homepage extends Component {
                                         <a role="button" className="btn btn-link" href="tel:+13308319545"><i className="fa fa-phone" /> 1-330-831-9545</a><br />
                                         <a role="button" className="btn btn-link" href="mailto:TailsOfTheTown@gmail.com"><i className="fa fa-envelope-o" /> TailsOfTheTown@gmail.com</a>
                                     </Col>
-                                    <Col>
-                                        <Link to="/contact">
-                                            <img src={Groom1} className="d-flex mr-3 img-thumbnail dogPic"  alt="All types grooming" />
-                                        </Link>
-                                    </Col>
                                 </Row>
 
                             </div>
