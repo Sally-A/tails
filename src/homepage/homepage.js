@@ -112,6 +112,11 @@ class Homepage extends Component {
                             <div className="media-body align-self-center">
                                 <Row>
                                     <Col>
+                                        <Link to="/contact">
+                                            <img src={Groom1} className="d-flex mr-3 img-thumbnail dogPic"  alt="All types grooming" />
+                                        </Link>
+                                    </Col>                                    
+                                    <Col>
                                         <h2>Contact Us</h2>
                                         <p class="d-none d-sm-block">Contact us for all your pet grooming needs.</p>
                                         <a role="button" className="btn btn-link" href="tel:+13308319545"><i className="fa fa-phone" /> 1-330-831-9545</a><br />
